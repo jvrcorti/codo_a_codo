@@ -71,6 +71,7 @@ span{
     background-image: url(images/background0003.jpg);
     background-attachment: scroll;
     background-size: cover;
+    text-align-last: right;
 } 
 footer{
     background-color: grey;
