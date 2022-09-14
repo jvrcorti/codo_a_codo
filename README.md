@@ -21,6 +21,8 @@ Finalizando con un <strong>&lt;footer&gt;</strong> con su correspondiente párra
 
 ![footer](https://user-images.githubusercontent.com/7760577/190028447-86762cfe-c2e7-4657-b790-8b592c352498.png)
 
+<strong>NOTA:</strong> Es una presentación, no el proyecto terminado. 
+
 
  
 
