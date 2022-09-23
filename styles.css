@@ -15,6 +15,7 @@ header{
     background-image: linear-gradient(100deg #ab212178 50%);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 nav{
     justify-content: space-between;
@@ -22,8 +23,14 @@ nav{
     align-items: center;
     padding: 10px 50px 10px;
 }
+nav i{
+    font-size: 20px;
+    color: coral;
+    margin: 0.7vh;
+    align-self: center;
+}
 .codeninja{
-    width: 40%;
+    width: 20%; /* screen 1920x1080 */
     max-width: 50%;
     /* min-width: 80%; */
     display: block;
@@ -57,9 +64,17 @@ span{
     /* align-items: center; */
     /* margin: 1vw; */
 }
-.container article{
+article{
+    display: block;
     width: 100%;
+    margin: 0 auto;
     padding: 6vh 6vw;
+    /* background-color: aquamarine; */
+}
+ul:hover{
+    background-color: aliceblue;
+    box-shadow: 0 0.1vh 0.4vw #39393978 ;
+    border-radius: 2.1vw;
 }
 .partners{
     display: flex;
@@ -72,6 +87,7 @@ span{
     background-attachment: scroll;
     background-size: cover;
     text-align-last: right;
+    background-position: center center;
 } 
 footer{
     background-color: grey;
