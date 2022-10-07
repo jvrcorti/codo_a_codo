@@ -84,6 +84,7 @@ ul:hover{
 .frame{
     padding: 6vh 6vw;
     background-image: url(images/background0003.jpg);
+    /*background-color: rgba(1,21,64,255);*/
     background-attachment: scroll;
     background-size: cover;
     text-align-last: right;
