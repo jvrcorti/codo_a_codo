@@ -6,8 +6,8 @@
 }
 body{
     margin: 0;
-    align-items: center;
-    text-align: center;
+    align-items: right;
+    text-align: right;
 }
 header{
     /* overflow: hidden; */
@@ -21,14 +21,14 @@ nav{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 10px 50px 10px;
+    /*padding: 10px 10px 10px ;*/
 }
-nav i{
+/*a i{
     font-size: 20px;
     color: coral;
     margin: 0.7vh;
     align-self: center;
-}
+}*/
 .codeninja{
     width: 20%; /* screen 1920x1080 */
     max-width: 50%;
@@ -63,6 +63,8 @@ span{
     flex-direction: row;
     /* align-items: center; */
     /* margin: 1vw; */
+    align-items: left;
+    text-align: left;
 }
 article{
     display: block;
@@ -74,7 +76,7 @@ article{
 ul:hover{
     background-color: aliceblue;
     box-shadow: 0 0.1vh 0.4vw #39393978 ;
-    border-radius: 2.1vw;
+    /*border-radius: 2.1vw;*/
 }
 .partners{
     display: flex;
@@ -83,8 +85,8 @@ ul:hover{
 }
 .frame{
     padding: 6vh 6vw;
-    background-image: url(images/background0003.jpg);
-    /*background-color: rgba(1,21,64,255);*/
+    /*background-image: url(images/background0003.jpg);*/
+    background-color: rgba(1,20,62,255);
     background-attachment: scroll;
     background-size: cover;
     text-align-last: right;
@@ -94,11 +96,20 @@ footer{
     background-color: grey;
     padding: 2vh;
     font-size: 0.8em;
+    text-align: center;
 }
 
-.button{
-  position: -webkit-sticky; 
+/*--------------------------------------------------------------*/
+body > a{
   position: sticky;
-  top: 0;
+  top: 40px;
+  align-items: right;
+  text-align: right;
+}
+
+body > a > img{
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 100%;
 }
 
