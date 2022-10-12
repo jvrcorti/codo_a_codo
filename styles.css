@@ -96,4 +96,9 @@ footer{
     font-size: 0.8em;
 }
 
+.button{
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
 
