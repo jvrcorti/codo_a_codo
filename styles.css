@@ -128,3 +128,54 @@ body > a > img{
     border-radius: 100%;
 }
 
+/*------------------------FORMULARIO--------------------------------------*/
+form{
+    grid-column-start: 1;
+}
+
+form > input {
+    margin-top: 2vh;
+    height: 6vh;
+}
+
+.entrada{
+    padding: 1vh;
+    border: 0.4vh;
+    border-style: solid;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.entrada:hover {
+    border: 0.4vh;
+    border-style: solid;
+    border-color: #00e6e6;
+}
+
+.entrada:focus::placeholder{
+    padding: 50%;
+}
+
+form > textarea {
+    margin-top: 2vh;
+}
+
+.formBoton{
+    position: absolute;
+    left: 26%;
+    background-color:#ca2324;
+    border: outset;
+    border-color: #d54f50;
+    padding: 1vh;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 10vw;
+    max-height: 38px;
+    min-height: 37px;
+}
+
+.formBoton:active{
+    border-style: inset;
+    border-color: #a21c1d;
+    border-radius: 10px;
+}
