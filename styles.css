@@ -100,16 +100,27 @@ footer{
 }
 
 /*--------------------------------------------------------------*/
-body > a{
-  position: sticky;
-  top: 40px;
+.home{
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    align-items: right;
+    text-align: right;
+    z-index: 100;
+  }
+
+.whatsapp{
+  position: fixed;
+  bottom: 8%;
+  right: 3%;
   align-items: right;
   text-align: right;
+  z-index: 100;
 }
 
 body > a > img{
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 9vh;
+    max-width: 9vw;
     border-radius: 100%;
 }
 
