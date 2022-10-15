@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/11e5ac05a3.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>👨‍💻 Codeninja 👩‍💻</title>
 </head>
 <body>
@@ -67,7 +68,7 @@
         </section>
         <section>
             <span style="font-size: 1vh 3vw; color: aqua; font-weight: 900;">Envianos tu consulta!</span>
-            <form method="POST" target="_blank">
+            <form method="POST">
                 <label for="formNombre"></label>
                 <input id="formNombre" class="entrada" type="text" placeholder="Nombre y Apellido" required>
                 <br>
@@ -77,7 +78,7 @@
                 <label for="formConsulta"></label>
                 <textarea id="formConsulta" class="entrada" type="text" rows="4" cols="50" placeholder="Consulta" required></textarea>
                 <br>
-                <input class="formBoton" type="button" value="Enviar consulta">
+                <input class="formBoton" type="button" onclick="sendConsulta()" value="Enviar consulta">
             </form>
             <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0577494193294!2d-58.369118484430516!3d-34.602701180459775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320d9ea4c5%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1661904974303!5m2!1ses-419!2sar" 
                     title="Google Arg" 
