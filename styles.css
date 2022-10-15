@@ -138,6 +138,10 @@ form > input {
     height: 6vh;
 }
 
+form > textarea {
+    margin-top: 2vh;
+}
+
 .entrada{
     padding: 1vh;
     border: 0.4vh;
@@ -153,11 +157,11 @@ form > input {
 }
 
 .entrada:focus::placeholder{
-    padding: 50%;
-}
-
-form > textarea {
-    margin-top: 2vh;
+    position: relative;
+    top: -10px;
+    font-size: 50%;
+    text-size-adjust: 90%;
+    transition: 0.2s ease all;
 }
 
 .formBoton{

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/11e5ac05a3.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>👨‍💻 Codeninja 👩‍💻</title>
 </head>
 <body>
@@ -67,14 +68,14 @@
         <section>
             <span style="font-size: 1vh 3vw; color: aqua; font-weight: 900;">Envianos tu consulta!</span>
             <form method="POST" target="_blank">
-                <input class="entrada" type="text" id="formNombre" required>
-                <span class="etiquetaFlotante">Nombre y Apellido</span>
+                <label for="formNombre"></label>
+                <input id="formNombre" class="entrada" type="text" placeholder="Nombre y Apellido" required>
                 <br>
-                <input class="entrada" type="email" id="formMail" required>
-                <span class="etiquetaFlotante">E-mail</span>
+                <label for="formMail"></label>
+                <input id="formMail" class="entrada" type="email" placeholder="E-mail" required>
                 <br>
-                <textarea class="entrada" type="text" id="formConsulta" rows="5" cols="50" required></textarea>
-                <span class="etiquetaFlotante">Consulta</span>
+                <label for="formConsulta"></label>
+                <textarea id="formConsulta" class="entrada" type="text" rows="4" cols="50" placeholder="Consulta" required></textarea>
                 <br>
                 <input class="formBoton" type="button" value="Enviar consulta">
             </form>
