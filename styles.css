@@ -159,9 +159,9 @@ form > textarea {
 .entrada:focus::placeholder{
     position: relative;
     top: -10px;
+    transition: 0.2s ease all;
     font-size: 50%;
     text-size-adjust: 90%;
-    transition: 0.2s ease all;
 }
 
 .formBoton{
