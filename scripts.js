@@ -45,4 +45,8 @@ function validarDatos(){
         return 0;
         //De todas formas puede ingresar solamente espacios
    }
+
+   alert("Su consulta ha sido enviada correctamente!");
+   //submiteo el formulario
+   document.envioConsulta.submit();
 }
