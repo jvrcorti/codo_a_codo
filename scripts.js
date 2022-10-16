@@ -9,34 +9,40 @@ function sendConsulta(){
 function validarDatos(){
    let nombre = document.getElementById("formNombre").value;
    let mail = document.getElementById("formMail").value;
+   let body = document.getElementById("formConsulta").value;
    
    //Patron para utilizar al validar nombre(solo letras Mm)
    const patternNombre = new RegExp('^[A-Z ]+$', 'i');
    //Patron para utilizar al validar mail
-   const patternMail = new RegExp('/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i');
+   const patternMail = new RegExp('^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$');
 
    //valido nombre
    if(nombre.length <= 50){
-      if(!patternNombre.test(nombre))
-      {
+      if(!patternNombre.test(nombre)){
         alert("El nombre debe contener letras solamente");
-        document.getElementById("formNombre").value = "";
+        //document.getElementById("formNombre").value = "";
         document.envioConsulta.formNombre.focus();
         return 0;    
       }
    }else{
     alert("El nombre no puede exceder los 50 caracteres");
     document.getElementById("formNombre").value = "";
-    document.envioConsulta.formNombre.focus();
+    //document.envioConsulta.formNombre.focus();
     return 0;
    }
 
    //valido mail
    if(!patternMail.test(mail)){
         alert("El mail ingresado no es correcto");
-        document.getElementById("formMail").value = "";
+        //document.getElementById("formMail").value = "";
         document.envioConsulta.formMail.focus();
         return 0;  
    }
 
+   if(body.length == 0){
+        alert("Debe ingresar una consulta");
+        document.envioConsulta.formMail.focus();
+        return 0;
+        //De todas formas puede ingresar solamente espacios
+   }
 }
