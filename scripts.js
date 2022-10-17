@@ -8,8 +8,8 @@ function sendConsulta(){
 
 function validarDatos(){
    let nombre = document.getElementById("formNombre").value;
-   let mail = document.getElementById("formMail").value;
-   let body = document.getElementById("formConsulta").value;
+   let mail   = document.getElementById("formMail").value;
+   let body   = document.getElementById("formConsulta").value;
    
    //Patron para utilizar al validar nombre(solo letras Mm)
    const patternNombre = new RegExp('^[A-Z ]+$', 'i');
@@ -46,7 +46,26 @@ function validarDatos(){
         //De todas formas puede ingresar solamente espacios
    }
 
-   alert("Su consulta ha sido enviada correctamente!");
-   //submiteo el formulario
-   document.envioConsulta.submit();
+   enviarMail();
+}
+
+
+function enviarMail(){
+
+  var parametros = {
+    nombre : document.getElementById("formNombre").value,
+    email  : document.getElementById("formMail").value,
+    mensaje: document.getElementById("formConsulta").value
+  };
+
+  const serviceID = "service_twz2pvn";
+  const templateID = "template_8ahv74z";
+
+  emailjs.send(serviceID, templateID, parametros)
+         .then((res) =>{
+              document.getElementById("formNombre").value = "";
+              document.getElementById("formMail").value = "";
+              document.getElementById("formConsulta").value = "";
+              alert("Su consulta ha sido enviada correctamente!");
+              })
 }
