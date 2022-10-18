@@ -1,0 +1,158 @@
+/* Formato Responsive Iphone 12/13 Pro max */
+@media screen and (max-width: 926px) {
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+header{
+    /* overflow: hidden; */
+    background-image: url(images/background0001.jpg);
+    background-image: linear-gradient(100deg #ab212178 50%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 20px;
+}
+nav i{
+    font-size: 25px;
+    color: coral;
+    margin: 0.4vh;
+    align-self: center;
+    padding: 1vw;
+}
+.codeninja{
+    width: 60%; /* screen 1920x1080 = 20% */
+    max-width: 80%;
+    /* min-width: 80%; */
+    display: block;
+    align-items: center;    
+}
+h1{
+    font-size: 6vh;
+    display: flex;
+    padding: 10vh 3vw;
+    color: rgb(242, 201, 247);
+}
+.line-two{
+    font-size: 3vh;
+    font-style: oblique;
+    font-weight: 600;
+    display: flex;
+    padding: 1vh 1vw;
+    align-items: left;
+    color: hsl(30, 20%, 98%);
+}
+span{
+    font-size: 1vh 3vw;
+    color: aqua;
+    font-weight: 900;
+    display: flex;
+    padding: 2vh 24vw;
+}
+.container{
+    display: grid;
+    grid-column: 3fr;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* margin: 1vw; */
+}
+article{
+    display: block;
+    max-width: 100%;
+    padding: 2vh 5vw;
+    /* background-color: aquamarine; */
+}
+ul, a{
+    list-style-type:none ;
+    width: auto auto;
+}
+ul:hover{
+    background-color: aliceblue;
+    box-shadow: 0 0.1vh 0.4vw #39393978 ;
+    border-radius: 2.1vw;
+}
+#idem{
+    color: #0404a0;
+    background-color: #f7ede2;
+    font-size: 2vh;
+    padding: 2vh 1vw;
+
+}
+.partners{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    width: 100%;
+    margin: auto 0;
+    grid-gap: 4px;
+    padding: 4px 4px;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: #f7ede2;
+}
+.partners img:hover{
+    filter: blur(1px);
+    transform: scale(1.1);
+    overflow: hidden;
+    max-width: 100%;
+    background-color: rgb(252, 252, 238);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.frame{
+    padding: 6vh 6vw;
+    background-image: url(images/background0003.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    text-align-last: right;
+    background-position: center center;
+} 
+.frame, iframe {
+    max-width: 100%;
+}
+footer{
+    background-color: grey;
+    padding: 1vh;
+    font-size: 0.9em;
+}
+.btn-wtp{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    line-height: center;
+    bottom: 20px;
+    right: 10px;
+    /* color: rgb(24, 23, 23);
+    border-radius: 13px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.33);
+    z-index: 100; */
+}
+.btn-wtp:hover{
+    text-decoration: none;
+    transform: scale(1.5);
+    transition-duration: 1.5s;
+}
+#gitlab{
+    color: black;
+}
+}
+
+
+
