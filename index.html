@@ -1,104 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Javier Corti">
-    <meta name="description" content="Web site created by Javier">
-    <link rel="shortcut icon" href="icons/rust.png" type="icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/11e5ac05a3.js" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("bDP4wAfrljutc27Hv");
-        })();
-    </script>
-    <title>👨‍💻 Codeninja 👩‍💻</title>
-</head>
-<body>
-    <!-- Icon's de fontawesome  -->
-    <a href="#top" class="home"><img src="icons/home.png"></a>
-    <a href="#" class="whatsapp" onclick="sendWpp()"><img src="icons/WhatsApp_icon.png"></a>
-    <header>
-        <!-- icons usados de la página https://icon-icons.com/ -->
-        
-        <nav>
-            <div>
-                <img class="codeninja" src="icons/codeninja-logo.svg" alt="">
-            </div>
-            
-        </nav>
-        <h1>¡Somos un grupo de diseño web!</h1>
-        <p class="line-two">Trabajamos ofreciendote servicios de calidad y valor para tus emprendimientos digitales.</p>
-        <span>Crecer junto es nuestra meta.</span>
-    </header>
-    <main>
-        <section class="container">
-            <article>
-                <ul>
-                    <li style="font-weight: bold;">Pack Básico</li>
-                    <li>Sitio web.</li>
-                    <li>Dos actualizaciones anuales.</li>
-                    <li>Soporte técnico.</li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li style="font-weight: bold;">Pack Profesional</li>
-                    <li>Sitio web alto rendimiento.</li>
-                    <li>Dos actualizaciones trimestrales.</li>
-                    <li>Soporte técnico 12Hs.</li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li style="font-weight: bold;">Pack Avanzado</li>
-                    <li>Sitio web alto rendimiento.</li>
-                    <li>Actualizaciones anuales con Security&REG;</li>
-                    <li>Soporte técnico 24Hs.</li>
-                </ul>
-            </article>
-        </section>
-        <section class="partners">
-            <img src="images/project01.jpg" width="100%" alt="">
-            <img src="images/project02.jpg" width="100%" alt="">
-            <img src="images/project03.jpg" width="100%" alt="">
-        </section>
-        <section>
-            <span style="font-size: 1vh 3vw; color: aqua; font-weight: 900;">Envianos tu consulta!</span>
-            <form action="" name="envioConsulta" method="get">
-                <label for="formNombre"></label>
-                <input id="formNombre" class="entrada" type="text" placeholder="Nombre y Apellido" required>
-                <br>
-                <label for="formMail"></label>
-                <input id="formMail" class="entrada" type="email" placeholder="E-mail" required>
-                <br>
-                <label for="formConsulta"></label>
-                <textarea id="formConsulta" class="entrada" type="text" rows="4" cols="50" placeholder="Consulta" required></textarea>
-                <br>
-                <input class="formBoton" type="button" onclick="validarDatos()" value="Enviar consulta">
-            </form>
-            <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0577494193294!2d-58.369118484430516!3d-34.602701180459775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320d9ea4c5%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1661904974303!5m2!1ses-419!2sar" 
-                    title="Google Arg" 
-                    width="500" 
-                    height="250" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Copyright 2022 by Codeninja. All rights reserverd.</p>
-        <p><i class="fa-brands fa-square-github"></i></p>    
-    </footer>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=firefox">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Javier Corti">
+        <meta name="description" content="Web site created by Javier">
+        <link rel="shortcut icon" href="icon/rust.png" type="icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" >
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/11e5ac05a3.js" crossorigin="anonymous"></script>
+        <script src="navScript.js" defer></script>
+       
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <title>👨‍💻 Codeninja 👩‍💻</title>
+    </head>
+    <body>
+        <header>
+          <nav id="inicio" class="navbar">
+            <div class="brand-title"><img src="icon/codeninja-logo.svg" alt="logo"></div>
+            <button class="toggle-button" id="toggle-button"><i id="toggle-icon" class="fa-solid fa-desktop"></i></button>
+            <ul class="navbar-links">
+              <li><a alt="Inicio" href="http://127.0.0.1:5501/index.html">Inicio</a></li>
+              <li><a alt="Servicios" href="#servicio">Servicios</a></li>
+              <li><a alt="Proyectos" href="#proyecto">Proyectos</a></li>
+              <li><a alt="Nosotros" href="#nosotro">Nosotros</a></li>
+              <li><a alt="Contacto" href="#form">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+  <main>
+      <section>
+          <article class="subinicio">
+              <h1>¡Somos un grupo de diseño web!</h1>
+              <p class="line-two">Trabajamos ofreciéndote servicios de calidad y valor para tus emprendimientos digitales.</p>
+              <span>Crecer juntos es nuestra meta.</span>
+          </article>        
+          <article class="container" id="servicio">
+              <ul id="pack">
+                  <li id="pack2"><strong>Pack Básico</strong></li>
+                  <li id="pack2">Sitio web.</li>
+                  <li id="pack2">Dos actualizaciones anuales.</li>
+                  <li id="pack2">Soporte técnico.</li>
+              </ul>
+          </article>
+          <article>
+              <ul id="pack">
+                  <li id="pack2"><strong>Pack Profesional</strong></li>
+                  <li id="pack2">Sitio web alto rendimiento.</li>
+                  <li id="pack2">Dos actualizaciones trimestrales.</li>
+                  <li id="pack2">Soporte técnico 12Hs.</li>
+              </ul>
+          </article>
+          <article>
+              <ul id="pack">
+                  <li id="pack2"><strong>Pack Avanzado</strong></li>
+                  <li id="pack2">Sitio web alto rendimiento.</li>
+                  <li id="pack2">Colección de servicios AWS&REG;</li>
+                  <li id="pack2">Soporte técnico 24Hs.</li>
+              </ul>
+          </article>
+      </section>
+      <!-- Siguiente Section contiene consigna transformación del TPO  -->
+      <section id="proyecto">
+          <div id="idem">
+              <p><strong>Quiénes confían en nosotros</strong></p>    
+          </div>
+          <!-- Aquí se incorpora la animación -->
+          <article class="partners">
+              <img id="imgpro" src="images/project01.jpg" width="100%" alt="">
+              <img id="imgpro" src="images/project02.jpg" width="100%" alt="">
+              <img id="imgpro" src="images/project03.jpg" width="100%" alt="">
+              <img id="imgpro" src="images/project04.jpg" width="100%" alt="">
+          </article>
+          <div id="nosotro" id="we">
+              <p><strong>Quiénes somos</strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto quas est asperiores consequuntur expedita et, neque dignissimos vitae animi adipisci blanditiis dolorem modi molestiae, nemo laboriosam, temporibus eum ipsam</p>
+          </div>
+      </section>
+      <section class="frame">  
+        <form action="" method="POST" id="form">
+            <input type="text" name="name" id="name" class="name" placeholder="Nombre y Apellido">
+                <label for=""></label>
+            <input type="email" name="email" id="email" placeholder="Email" class="email">
+                <label for=""></label>
+            <textarea  name="comments" id="consulta" class="consulta" placeholder="Consulta"></textarea>
+                <label for=""></label>
+            <button class="button" type="submit">Enviar</button>
+                <p class="warnings" id="warnings"></p>
+        </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0577494193294!2d-58.369118484430516!3d-34.602701180459775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335320d9ea4c5%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1661904974303!5m2!1ses-419!2sar" title="Google Arg" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <!-- API rest: https://jsonplaceholder.typicode.com/users -->
+      <section>
+        <div id="representar"><strong>Nuestros representantes</strong></div>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th><strong>Nombre</strong></th>
+                    <th><strong>Email</strong></th>
+                </tr>
+            </thead>
+            <tbody id="respuesta">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </main>
+  <footer>
+      <p>&copy; Copyright 2022 by Codeninja. All right reserverd.</p>
+      <a id="gitlab" href="https://github.com/jvrcorti/codo_a_codo" target="_blank"><p><i class="fa-brands fa-square-github"></i></p></a>    
+<!-- Siguiente enlace contiene transición logo de whatsapp -->
+      <a class="btn-wtp" title="Contáctenos" href="#" onclick="sendWpp()" target="" 
+      alt="Contáctenos"><img src="icon/whatsapp.ico"></a>
+  </footer>
+  <!-- <script src="scripts.js"></script> -->
+  <script src="scripts.js"></script>
+  <script src="validar.js"></script>
+  <script src="apiget.js"></script>
 </body>
 </html>
