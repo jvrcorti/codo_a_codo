@@ -1,3 +1,4 @@
+
 const nombre = document.getElementById("name");
 const email = document.getElementById("email");
 const consulta = document.getElementById("consulta");
@@ -13,8 +14,16 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
     if(!regexname.test(nombre.value)){
-        warnings += `El nombre no es valido. <br>`
+        if(nombre.value.length === 0){
+            warnings += 'Debe ingresar su nombre y apellido <br>'
+            entrar = true
+        }else if(nombre.value.length >= 30){
+            warnings += 'Su nombre y apellido debe ser menor <br>'
+            entrar = true
+        }   
+        else {warnings += `El nombre no es valido. <br>`
         entrar = true
+        }
     }
     if(!regexEmail.test(email.value)){
         warnings += `El email no es valido. <br>`
@@ -30,3 +39,4 @@ form.addEventListener("submit", e=>{
         parrafo.innerHTML = "Enviado"
     }
 })
+
