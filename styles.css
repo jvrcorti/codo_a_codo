@@ -226,7 +226,8 @@ iframe {
 }
 #form button{
     display: block;
-    width: 80%;
+    width: 16%;
+    border-radius: 5px;
     height: 3vh;
     border: none;
     margin: 10px auto;
@@ -237,6 +238,10 @@ iframe {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 /* #form button:hover{
     background: black;
@@ -470,7 +475,8 @@ footer{
     }
     #form button{
         display: block;
-        width: 80%;
+        width: 16%;
+        border-radius: 5px;
         height: 3vh;
         border: none;
         margin: 10px auto;
@@ -481,7 +487,11 @@ footer{
         font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
-    }
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
     /* #form button:hover{
         background: black;
         transition: .8s all linear;
@@ -714,8 +724,9 @@ footer{
     }
     #form button{
         display: block;
-        width: 80%;
-        height: 3vh;
+        width: 20%;
+        border-radius: .5vw;
+        height: 4vh;
         border: none;
         margin: 10px auto;
         outline: none;
@@ -725,7 +736,11 @@ footer{
         font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
-    }
+        -webkit-border-radius: .5vw;
+        -moz-border-radius: .5vw;
+        -ms-border-radius: .5vw;
+        -o-border-radius: .5vw;
+}
     /* #form button:hover{
         background: black;
         transition: .8s all linear;
