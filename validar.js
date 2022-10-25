@@ -10,20 +10,26 @@ form.addEventListener("submit", e=>{
     e.preventDefault()
     let warnings = ""
     let entrar = false
-    let regexname = /^[a-zA-Z]+$/
+    let regexname = /^[1-9]+$/
+    //let regexname = /^[a-zA-Z\s]+$/
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
     if(!regexname.test(nombre.value)){
-        if(nombre.value.length === 0){
+        if(nombre.value.length === 0 ){
             warnings += 'Debe ingresar su nombre y apellido <br>'
             entrar = true
-        }else if(nombre.value.length >= 30){
-            warnings += 'Su nombre y apellido debe ser menor <br>'
-            entrar = true
-        }   
-        else {warnings += `El nombre no es valido. <br>`
-        entrar = true
         }
+        else if(nombre.value.length <= 4 ){
+                warnings += 'Su nombre y apellido debe ser mayor <br>'
+                entrar = true
+        }
+        else {
+            entrar =false
+        }
+        
+    }else {
+        warnings += 'El nombre no es valido. <br>'
+        entrar = true
     }
     if(!regexEmail.test(email.value)){
         warnings += `El email no es valido. <br>`

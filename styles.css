@@ -255,7 +255,7 @@ iframe {
     width: 300px;
     text-align: center;
     margin: auto;
-    background-color: hsl(240, 100%, 50%, 0.5);
+    background-color: hsl(255, 100%, 0%, 0.8);
     color: whitesmoke;
     font-weight: bold;
     padding-top: 5px;
@@ -470,6 +470,7 @@ footer{
         height: 10vh;
         border: none;
         margin: .3vh;
+        padding: 1vh;
         font-size: 1rem;
         background: #f7ede2;
     }
@@ -504,7 +505,7 @@ footer{
         width: 200px;
         text-align: center;
         margin: auto;
-        background-color: hsl(240, 100%, 50%, 0.5);
+        background-color: hsl(255, 100%, 0%, 0.8);
         color: whitesmoke;
         font-weight: bold;
         padding-top: 20px;
@@ -719,6 +720,7 @@ footer{
         height: 10vh;
         border: none;
         margin: .3vh;
+        padding: 1vh;
         font-size: 1rem;
         background: #f7ede2;
     }
@@ -753,7 +755,7 @@ footer{
         width: 200px;
         text-align: center;
         margin: auto;
-        background-color: hsl(240, 100%, 50%, 0.5);
+        background-color: hsl(255, 100%, 0%, 0.8);
         color: whitesmoke;
         font-weight: bold;
         padding-top: 20px;
